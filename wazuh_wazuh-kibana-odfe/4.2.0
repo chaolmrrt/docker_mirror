@@ -1,0 +1,1 @@
+FROM wazuh/wazuh-kibana-odfe:4.2.0
