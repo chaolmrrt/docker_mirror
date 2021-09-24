@@ -11,7 +11,7 @@ _upload="127.0.0.1/pub"
 
 _url_from_mirror=$_mirror"/"`echo $1|sed 's,/,_,g'`
 
-_url_origin=`basename "$1"| tr '_' '/'`
+_url_origin=`basename "$_url_from_mirror"| tr '_' '/'`
 _url_upload=$_upload"/"$_url_origin
 
 echo docker pull $_url_from_mirror
