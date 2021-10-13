@@ -1,3 +1,4 @@
 kubernetesui/dashboard:v2.3.1
 kubernetesui/metrics-scraper:v1.0.6
 k8s.gcr.io/kubernetes-dashboard-amd64:v1.10.0
+k8s.gcr.io/kubernetes-dashboard-amd64:v1.10.1
