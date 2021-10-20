@@ -1,2 +1,3 @@
 jenkinsci/blueocean:1.25.0
 jenkins/jenkins:2.317
+jenkins/jenkins:lts-jdk11
