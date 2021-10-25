@@ -1,3 +1,5 @@
 wazuh/wazuh-kibana-odfe:4.2.0
 wazuh/wazuh-odfe:4.2.0
 amazon/opendistro-for-elasticsearch:1.13.2
+wazuh/wazuh-kibana-odfe:4.2.4
+wazuh/wazuh-odfe:4.2.4
