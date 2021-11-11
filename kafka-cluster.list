@@ -1,0 +1,2 @@
+bitnami/zookeeper:3.4.12
+bitnami/kafka:1.1.1-debian-9

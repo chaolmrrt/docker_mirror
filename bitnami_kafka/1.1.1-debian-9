@@ -1,0 +1,1 @@
+FROM bitnami/kafka:1.1.1-debian-9
