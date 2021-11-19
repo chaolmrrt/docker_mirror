@@ -1,1 +1,2 @@
-zabbix/zabbix-server-mysql:5.0-centos-latest
+zabbix/zabbix-server-mysql:centos-5.4.7
+zabbix/zabbix-server-mysql:ubuntu-5.4.7
