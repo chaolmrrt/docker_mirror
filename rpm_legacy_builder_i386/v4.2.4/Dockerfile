@@ -1,7 +1,11 @@
 FROM scratch
 
 # Add the tar.gz with all the files needed
-ADD https://packages-dev.wazuh.com/utils/centos-5-i386-build/centos-5-i386.tar.gz /
+ADD centos-5-i386.tar.gz /
+
+# // UES here, by rrt on 2022-03-09
+ADD CentOS-Base.repo /etc/yum.repos.d/
+# // UES end
 
 RUN linux32 yum install -y gcc-c++
 
