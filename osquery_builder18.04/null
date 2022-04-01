@@ -1,0 +1,1 @@
+FROM osquery/builder18.04
