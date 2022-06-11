@@ -22,5 +22,5 @@ echo docker pull $_url_from_mirror
 echo docker tag $_url_from_mirror  $_url_upload
 echo docker push $_url_upload
 echo docker rmi $_url_upload
-#echo docker rmi $_url_from_mirror $_url_upload
+echo docker rmi $_url_from_mirror
 
