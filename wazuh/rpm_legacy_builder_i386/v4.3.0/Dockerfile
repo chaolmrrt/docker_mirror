@@ -3,6 +3,9 @@ FROM scratch
 # Add the tar.gz with all the files needed
 ADD centos-5-i386.tar.gz /
 
+# by rrt for https:// to http://
+ADD CentOS-Base.repo /etc/yum.repos.d/
+
 RUN linux32 yum install -y gcc-c++
 
 # Install Perl 5.10
@@ -34,9 +37,10 @@ ENV CPLUS_INCLUDE_PATH "/usr/local/gcc-9.4.0/include/c++/9.4.0/"
 ENV LD_LIBRARY_PATH "/usr/local/gcc-9.4.0/lib/"
 ENV PATH "/usr/local/gcc-9.4.0/bin:${PATH}"
 
-RUN curl -OL http://packages.wazuh.com/utils/cmake/cmake-3.12.4.tar.gz && \
-    tar -zxvf cmake-3.12.4.tar.gz && cd cmake-3.12.4 && \
-    linux32 ./bootstrap && linux32 make -j2 && linux32 make install && \
+RUN curl -OL http://packages.wazuh.com/utils/cmake/cmake-3.13.5.tar.gz && \
+    tar -zxvf cmake-3.13.5.tar.gz && cd cmake-3.13.5 && \
+    linux32 ./bootstrap && linux32 make -j16 && linux32 make install && \
     cd / && rm -rf cmake-*
+
 
 CMD ["/bin/bash"]

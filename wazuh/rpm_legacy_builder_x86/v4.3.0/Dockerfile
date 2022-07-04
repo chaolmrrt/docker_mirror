@@ -41,8 +41,8 @@ ENV CPLUS_INCLUDE_PATH "/usr/local/gcc-9.4.0/include/c++/9.4.0/"
 ENV LD_LIBRARY_PATH "/usr/local/gcc-9.4.0/lib64/"
 ENV PATH "/usr/local/gcc-9.4.0/bin:${PATH}"
 
-RUN curl -OL http://packages.wazuh.com/utils/cmake/cmake-3.12.4.tar.gz && \
-    tar -zxvf cmake-3.12.4.tar.gz && cd cmake-3.12.4 && \
-    ./bootstrap && make -j2 && make install && cd / && rm -rf cmake-*
+RUN curl -OL http://packages.wazuh.com/utils/cmake/cmake-3.13.5.tar.gz && \
+    tar -zxvf cmake-3.13.5.tar.gz && cd cmake-3.13.5 && \
+    ./bootstrap && make -j20 && make install && cd / && rm -rf cmake-*
 
 CMD ["/bin/bash"]
