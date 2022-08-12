@@ -1,0 +1,6 @@
+FROM rpm_builder_aarch64:v4.3.0
+
+RUN /bin/rpm -e gcc gcc-c++ libtool libicu nodejs npm && \
+	yum clean all && \
+	date "+%Y-%m-%d %H:%M:%S" > /date && \
+	ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
